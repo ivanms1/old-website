@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import PageOne from './components/page-one';
 import PageTwo from './components/page-two';
 import PageThree from './components/page-three';
@@ -13,6 +14,7 @@ class App extends Component {
   }
 
   componentDidMount(){
+
     window.addEventListener('scroll', () => {
       this.setState({ position: window.scrollY })
     })

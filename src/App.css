@@ -6,6 +6,16 @@
   100% { transform: translateY(0%); }
 }
 
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(0,0,0,0.7); }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -78,31 +88,31 @@
 }
 
 .port-pic{
-  width: 150px;
+  width: calc(200px + .5vw);
   border-radius: 50%;
   margin: 10px;
 }
 
 .title{
-  font-size: 4vw;
+   font-size: calc(35px + 1vw);
   background-color: rgb(255,255,255, 0.5);
   border-radius: 5px;
   padding: 1%;
 }
 
 .subtitle{
-  font-size: 2vw;
-  margin: 15px;
+  font-size: calc(25px + .8vw);
+  margin: 15px 0;
 }
 
 
 .hire-me{
   margin: 10px;
-  font-size: 2vw;
+  font-size: calc(20px + .8vw);
   border: solid 2px rgb(0,0,0,0.7);
-  width: 200px;
+  width: 150px;
   text-align: center;
-  border-radius: 100px;
+  border-radius: 75px;
   transition: all .2s ease-in
 }
 
@@ -110,7 +120,7 @@
   cursor: pointer;
   color: black;
   border-color: black;
-  animation: jump 1s infinite;
+  animation: jump .5s infinite;
 
 }
 
@@ -119,19 +129,19 @@
 }
 
 .page-two-title{
-  font-size: 4vw;
+  font-size: calc(40px + 2vw);
   margin: 30px 4%;
   
 }
 
 .projects {
   display: grid;
-  grid-template-columns: 32% 32% 32%;
-  grid-template-rows: 50% 50%;
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+  grid-template-rows: auto;
   align-items: center;
   justify-items: center;
-  grid-gap: 20px;
-  margin: 20px 0;
+  grid-gap: 10px;
+  margin: 30px 10px;
 
 }
 
@@ -139,7 +149,7 @@
   text-align: center;
   text-decoration: none;
   transform: translateX(-400%);
-  transition: transform 1.5s ease-out;
+  transition: transform 1s ease-out;
 }
 
 .project-show{
@@ -148,6 +158,7 @@
 
 .project img {
   border-radius: 10px;
+  width: 100%;
 }
 
 .project:hover{
@@ -160,8 +171,8 @@
 }
 
 .page-three-title{
-  margin: 30px 4% 0px 4%;
-  font-size: 4vw;
+  margin: 30px 4% 4% 4%;
+  font-size: calc(40px + 2vw);
   transform: translateX(240%);
   transition: transform 1s ease-out;
 }
@@ -189,13 +200,13 @@
 
 .bio h1 {
   text-align: center;
-  font-size:3.2vw;
+  font-size:calc(35px + 1.2vw);
 }
 
 .bio p {
   text-align: justify;
   margin: 25px 10px;
-  font-size: 1.5vw;
+  font-size: calc(15px + .6vw);
 }
 
 .skills{
@@ -210,7 +221,7 @@
 
 .skills h1{
   text-align: center;
-  font-size:3.2vw;
+  font-size:calc(35px + 1.2vw);
 }
 
 
@@ -227,4 +238,18 @@
 
 svg{
   width: 100px;
+}
+
+@media only screen and (max-width: 800px){
+  .info{
+    flex-direction: column;
+  }
+
+  .bio{
+    width: 100%;
+  }
+
+  .skills{
+    width: 100%;
+  }
 }
