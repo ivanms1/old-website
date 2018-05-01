@@ -27,8 +27,12 @@
 .page-one-navbar{
   height: 100vh;
   background-image: url('./pics/pic1.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   background-position: center;
+
 }
 
 .navbar{
@@ -79,12 +83,11 @@
 }
 
 .page-one{
-  height: 100vh;
+  height: 95vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  position: 
 }
 
 .port-pic{
@@ -125,7 +128,8 @@
 }
 
 .page-two{
-  
+  overflow: hidden;
+  padding-bottom: 5%;
 }
 
 .page-two-title{
@@ -138,10 +142,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
   grid-template-rows: auto;
-  align-items: center;
-  justify-items: center;
   grid-gap: 10px;
-  margin: 30px 10px;
 
 }
 
@@ -150,6 +151,10 @@
   text-decoration: none;
   transform: translateX(-400%);
   transition: transform 1s ease-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .project-show{
@@ -157,21 +162,26 @@
 }
 
 .project img {
+  width: 90%;
   border-radius: 10px;
-  width: 100%;
+
+  
 }
 
 .project:hover{
-  transform: scale(1.05)
+  transform: scale(1.02)
 }
 
 .page-three{
   overflow: hidden;
   background-color: rgb(216, 216, 218);
+  background-image: url('./pics/pic2.jpg');
+  background-size: cover;
+  background-position: bottom;
 }
 
 .page-three-title{
-  margin: 30px 4% 4% 4%;
+  margin: 30px 4% 1% 4%;
   font-size: calc(40px + 2vw);
   transform: translateX(240%);
   transition: transform 1s ease-out;
@@ -184,7 +194,7 @@
 .info{
   display: flex;
   flex-direction: row;
-  margin: 0px 4%;
+  margin: 0px 4% 2% 0;
   justify-content: space-around;
 }
 
@@ -207,6 +217,8 @@
   text-align: justify;
   margin: 25px 10px;
   font-size: calc(15px + .6vw);
+  background-color: rgb(255,255,255, 0.5);
+  border-radius: 10px;
 }
 
 .skills{
@@ -243,6 +255,10 @@ svg{
 @media only screen and (max-width: 800px){
   .info{
     flex-direction: column;
+  }
+
+  .project{
+    width: 100vw;
   }
 
   .bio{

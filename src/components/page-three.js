@@ -8,18 +8,15 @@ export default class PageThree extends Component {
 
 	componentDidMount(){
 		window.addEventListener('scroll', () => {
-
-			if(this.props.position > 800){
-			this.setState({ title: 'page-three-title show' })
-		}
-
-			if(this.props.position > 850){
-			this.setState({ bio: 'bio bio-show'})
-		}
-
-			if(this.props.position > 900){
-			this.setState({ skills: 'skills skills-show'})
-		}
+			if(window.innerWidth <= 800){
+				if(this.props.position > 1550) this.setState({ title: 'page-three-title show' });
+				if(this.props.position > 1700) this.setState({ bio: 'bio bio-show'});
+				if(this.props.position > 2000) this.setState({ skills: 'skills skills-show'});
+			} else{
+				if(this.props.position > 800) this.setState({ title: 'page-three-title show' });
+				if(this.props.position > 850) this.setState({ bio: 'bio bio-show'});
+				if(this.props.position > 900) this.setState({ skills: 'skills skills-show'});
+			}
 		});
 	}
 	render(){

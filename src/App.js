@@ -10,12 +10,11 @@ import './App.css';
 class App extends Component {
   constructor(props){
     super(props);
-    this.state = { position: 0 }
+    this.state = { position: 0, width: window.innerHeight }
   }
 
   componentDidMount(){
-
-    window.addEventListener('scroll', () => {
+  window.addEventListener('scroll', () => {
       this.setState({ position: window.scrollY })
     })
   }
