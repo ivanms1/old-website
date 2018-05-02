@@ -10,7 +10,7 @@ import './App.css';
 class App extends Component {
   constructor(props){
     super(props);
-    this.state = { position: 0, width: window.innerHeight }
+    this.state = { position: 0, width: window.innerWidth };
   }
 
   componentDidMount(){
@@ -18,13 +18,21 @@ class App extends Component {
       this.setState({ position: window.scrollY })
     })
   }
+
+  remove(){
+    let mobileMenu = document.querySelector('.mobile-menu');
+    if (mobileMenu.classList.contains('mobile-menu-show')){
+      mobileMenu.classList.remove('mobile-menu-show');
+    }
+  }
+
   render() {
     return (
       <div className="App">
-        <PageOne position={this.state.position}/>
-        <PageTwo position={this.state.position}/>
-        <PageThree position={this.state.position}/>
-        <PageFour/>
+        <PageOne remove={this.remove} position={this.state.position} width={this.state.width}/>
+        <PageTwo remove={this.remove} position={this.state.position}/>
+        <PageThree remove={this.remove} onClick={this.remove} position={this.state.position}/>
+        <PageFour remove={this.remove}/>
       </div>
     );
   }

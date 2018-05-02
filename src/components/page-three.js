@@ -21,7 +21,7 @@ export default class PageThree extends Component {
 	}
 	render(){
 		return (
-		<div className="page-three">
+		<div onClick={this.props.remove} className="page-three">
 			<h1 className={this.state.title}>About me</h1>
 			<div className="info">
 				<div className={this.state.bio}>

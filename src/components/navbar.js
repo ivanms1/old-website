@@ -1,13 +1,17 @@
 import React from 'react';
 
-export default function Navbar({position}) {
+export default function Navbar({position, width}) {
+
 	let className = 'navbar';
 	if(position === 0){
 		className += ' hidden'
 	}
 	return (
 		<ul className={className}>
-			<li className="home">Home</li>
+			<li className='home'>
+				<div></div>
+				<div></div>
+				<div></div></li>
 			<li>Portfolio</li>
 			<li>About me</li>
 			<li>Contact</li>
