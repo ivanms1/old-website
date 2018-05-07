@@ -15,7 +15,8 @@ export default function Navbar({position, width}) {
 			<li>Portfolio</li>
 			<li>About me</li>
 			<li>Contact</li>
-			<li className="icon"><i className="devicon-github-plain colored"></i></li>
+			<li className="icon"><i class="fab fa-github"></i></li>
+			<li className="icon"><i class="fab fa-linkedin"></i></li>
 		</ul>
 		)
 }

@@ -73,7 +73,7 @@
 }
 
 .icon:hover{
-  animation: jump 1s infinite;
+  animation: jump .7s infinite;
 
 }
 
@@ -183,7 +183,7 @@
   cursor: pointer;
   color: black;
   border-color: black;
-  animation: jump .5s infinite;
+  animation: jump .7s infinite;
 
 }
 
@@ -403,10 +403,11 @@ form {
 
   form{
     width: 100%;
+    align-items: center;
   }
 
   form *{
-    width: 100%;
+    width: 98%;
   }
 
   .connect{

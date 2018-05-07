@@ -16,7 +16,8 @@ export default function MobileNavbar({position}){
 				<li>Portfolio</li>
 				<li>About Me</li>
 				<li>Contact</li>
-				<li><i className="devicon-github-plain colored"></i></li>
+				<li><i class="fab fa-github"></i></li>
+				<li><i class="fab fa-linkedin"></i></li>
 				</ul>
 			<ul className={className}>
 				<li onClick={show} className='home'>
