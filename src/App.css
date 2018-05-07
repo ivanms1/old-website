@@ -312,6 +312,73 @@ svg{
   width: 100px;
 }
 
+.page-four{
+
+}
+
+.page-four-title{
+  margin: 30px 4% 1% 4%;
+  font-size: calc(40px + 2vw);
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    width: 95%;
+    margin: 0% 2.5%;
+  }
+
+form {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    margin: 0% 0% 2%;
+  }
+
+  form p {
+    font-size:calc(25px + 1vw);
+  }
+
+  input{
+  font-size:calc(20px + .4vw);
+  width: 50%;
+  margin: 1%;
+  border: 1px solid #CCCCCC !important;
+  }
+
+  textarea{
+  font-size:calc(20px + .4vw);
+  width: 70%;
+  margin: 1%;
+  border: 1px solid #CCCCCC !important;
+  }
+
+  form button{
+    font-size:calc(20px + .6vw);
+    margin: 1%;
+    width: 18%;
+  }
+
+  .connect{
+    margin: 2% 0%;
+  }
+
+  .connect p {
+    text-align: center;
+    font-size:calc(20px + .4vw);
+
+  }
+
+  .footer{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(237, 239, 241);
+    text-align: center;
+    padding: .5% 0;
+  }
+
 @media only screen and (max-width: 800px){
   .info{
     flex-direction: column;
@@ -327,5 +394,26 @@ svg{
 
   .skills{
     width: 100%;
+  }
+
+  .contact-form{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  form{
+    width: 100%;
+  }
+
+  form *{
+    width: 100%;
+  }
+
+  .connect{
+    width: 100%;
+  }
+
+  form button{
+    width: 25%;
   }
 }
