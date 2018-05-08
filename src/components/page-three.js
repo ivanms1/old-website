@@ -1,34 +1,30 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-export default class PageThree extends Component {
-	constructor(props){
-		super(props)
-		this.state = { bio: 'bio', skills: 'skills', title: 'page-three-title' };
-	}
+export default function PageThree({position, remove}) {
 
-	componentDidMount(){
-		window.addEventListener('scroll', () => {
-			if(window.innerWidth <= 800){
-				if(this.props.position > 1550) this.setState({ title: 'page-three-title show' });
-				if(this.props.position > 1700) this.setState({ bio: 'bio bio-show'});
-				if(this.props.position > 2000) this.setState({ skills: 'skills skills-show'});
+	let title = document.querySelector('.page-three-title');
+	let bio = document.querySelector('.bio');
+	let skills = document.querySelector('.skills');
+
+	if(window.innerWidth <= 800){
+				if(position > 1550) title.classList.add('show');
+				if(position > 1700) bio.classList.add('show');
+				if(position > 2000) skills.classList.add('show');
 			} else{
-				if(this.props.position > 800) this.setState({ title: 'page-three-title show' });
-				if(this.props.position > 850) this.setState({ bio: 'bio bio-show'});
-				if(this.props.position > 900) this.setState({ skills: 'skills skills-show'});
+				if(position > 800) title.classList.add('show');
+				if(position > 850) bio.classList.add('show');
+				if(position > 900) skills.classList.add('show');
 			}
-		});
-	}
-	render(){
-		return (
-		<div onClick={this.props.remove} className="page-three">
-			<h1 className={this.state.title}>About me</h1>
+
+	return (
+		<div onClick={remove} className="page-three">
+			<h1 className="page-three-title">About me</h1>
 			<div className="info">
-				<div className={this.state.bio}>
+				<div className="bio">
 					<h1>Bio</h1>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur inventore exercitationem reprehenderit saepe ut fugit accusamus impedit doloremque a veniam soluta tenetur facere, nesciunt quasi eveniet, atque harum totam repudiandae maiores assumenda illum ea! Consectetur amet, quam velit natus explicabo culpa id ipsum, distinctio accusantium, dolorem dolor possimus laborum voluptate!</p>
 				</div>
-				<div className={this.state.skills}>
+				<div className="skills">
 					<h1>Skills</h1>
 					<div className="languages">
 					<svg viewBox="0 0 128 128">
@@ -54,5 +50,4 @@ export default class PageThree extends Component {
 			</div>
 		</div>
 		)
-	}
 }

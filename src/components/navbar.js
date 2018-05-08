@@ -12,11 +12,12 @@ export default function Navbar({position, width}) {
 				<div></div>
 				<div></div>
 				<div></div></li>
-			<li>Portfolio</li>
-			<li>About me</li>
-			<li>Contact</li>
-			<li className="icon"><i class="fab fa-github"></i></li>
-			<li className="icon"><i class="fab fa-linkedin"></i></li>
+			<li><a href="">Portfolio</a></li>
+			<li><a href="">About me</a></li>
+			<li><a href="">Contact</a></li>
+			<li className="icon"><a rel="noopener noreferrer" target="_blank" href="https://github.com/ivanms1"><i className="fab fa-github"></i></a></li>
+			<li className="icon"><a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/ivansaldano"><i className="fab fa-linkedin"></i></a></li>
+			<li className="icon"><a rel="noopener noreferrer" target="_blank" href="https://codepen.io/ivanms1/"><i className="fab fa-codepen"></i></a></li>
 		</ul>
 		)
 }

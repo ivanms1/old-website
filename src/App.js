@@ -16,9 +16,16 @@ class App extends Component {
   componentDidMount(){
   window.addEventListener('scroll', () => {
       this.setState({ position: window.scrollY })
-    })
+    });
+
+  window.addEventListener('resize', () => {
+    this.setState({width: window.innerWidth})
+  });
   }
 
+  showRef(){
+    console.log(this.refs.something);
+  }
   remove(){
     let mobileMenu = document.querySelector('.mobile-menu');
     if (mobileMenu.classList.contains('mobile-menu-show')){
@@ -32,7 +39,7 @@ class App extends Component {
         <PageOne remove={this.remove} position={this.state.position} width={this.state.width}/>
         <PageTwo remove={this.remove} position={this.state.position}/>
         <PageThree remove={this.remove} onClick={this.remove} position={this.state.position}/>
-        <PageFour remove={this.remove}/>
+        <PageFour  position={this.state.position} remove={this.remove}/>
       </div>
     );
   }

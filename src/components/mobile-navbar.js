@@ -16,9 +16,10 @@ export default function MobileNavbar({position}){
 				<li>Portfolio</li>
 				<li>About Me</li>
 				<li>Contact</li>
-				<li><i class="fab fa-github"></i></li>
-				<li><i class="fab fa-linkedin"></i></li>
-				</ul>
+				<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/ivanms1"><i className="fab fa-github"></i></a></li>
+				<li><a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/ivansaldano"><i className="fab fa-linkedin"></i></a></li>
+				<li><a rel="noopener noreferrer" target="_blank" href="https://codepen.io/ivanms1/"><i className="fab fa-codepen"></i></a></li>
+			</ul>
 			<ul className={className}>
 				<li onClick={show} className='home'>
 					<div></div>
