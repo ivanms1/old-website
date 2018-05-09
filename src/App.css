@@ -49,8 +49,19 @@
   z-index:1;
 }
 
-.navbar .home{
-  margin-right: auto
+.logo-container{
+  margin-right: auto;
+  width: 100px;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo img {
+  width: 80px;
 }
 
 .hidden {
@@ -103,9 +114,22 @@
   background-color: black;
   margin: 6px 6px;
 }
-.navbar .home{
-  margin-right: auto
+.home{
+  z-index: 1;
 }
+
+.mobile-logo-container{
+  position: absolute;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 80px;
+}
+
 
 .mobile-menu{
   list-style-type: none;
@@ -123,7 +147,6 @@
   transition: transform .5s ease-out;
   z-index:2;
 
-  
 }
 
 .mobile-menu-show{
@@ -149,29 +172,25 @@
 }
 
 .port-pic{
-  width: calc(200px + .5vw);
+  width: calc(175px + .4vw);
   border-radius: 50%;
   margin: 10px;
 }
 
-.title{
-   font-size: calc(35px + 1vw);
-  background-color: rgb(255,255,255, 0.5);
-  border-radius: 5px;
-  padding: 1%;
+.big-logo{
+  width: calc(150px + .3vw);
 }
 
 .subtitle{
-  font-size: calc(25px + .8vw);
+  font-size: calc(20px + .8vw);
   margin: 15px 0;
 }
 
 
 .hire-me{
-  margin: 10px;
-  font-size: calc(20px + .8vw);
+  font-size: calc(15px + .6vw);
   border: solid 2px rgb(0,0,0,0.7);
-  width: 150px;
+  width: calc(100px + 1vw);
   text-align: center;
   border-radius: 75px;
   transition: all .2s ease-in
@@ -320,7 +339,7 @@ svg{
     flex-direction: row;
     align-items:flex-start;
     width: 95%;
-    margin: 0% 2.5%;
+    margin: 0% 2.5% 25px;
   }
 
 form {
@@ -358,7 +377,7 @@ form {
   form button{
     font-size:calc(20px + .6vw);
     margin: 1%;
-    width: 18%;
+    width: 19%;
   }
 
   .connect{

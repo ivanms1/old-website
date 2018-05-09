@@ -7,6 +7,7 @@ export default function MobileNavbar({position, remove}){
 			if(position === 0){
 			className += ' hidden'
 			}
+
 		function show(){
 			clase.classList.add('mobile-menu-show');
 		}
@@ -34,6 +35,12 @@ export default function MobileNavbar({position, remove}){
 					<div></div>
 					<div></div>
 				</li>
+				<li className="mobile-logo-container">
+					<Link activeClass="active" to="page-one" spy={true} smooth={true} offset={-10} duration={700}>
+						<img className="logo" src="./pics/logo.png" alt="ivan logo"/>
+					</Link>
+				</li>
+				
 			</ul>
 		</div>
 		

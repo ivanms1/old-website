@@ -9,10 +9,9 @@ export default function Navbar({position, width}) {
 	}
 	return (
 		<ul className={className}>
-			<li className='home'>
-				<div></div>
-				<div></div>
-				<div></div></li>
+			<Link className="logo-container" activeClass="active" to="page-one" spy={true} smooth={true} offset={-10} duration={700}>
+				<li className="logo"><img src="./pics/logo.png" alt=""/></li>
+			</Link>
 			<Link activeClass="active" to="page-two" spy={true} smooth={true} offset={-10} duration={700}>
 				<li>Portfolio</li>
 			</Link>
