@@ -4,7 +4,6 @@ import PageOne from './components/page-one';
 import PageTwo from './components/page-two';
 import PageThree from './components/page-three';
 import PageFour from './components/page-four';
-
 import './App.css';
 
 class App extends Component {
@@ -22,13 +21,10 @@ class App extends Component {
     this.setState({width: window.innerWidth})
   });
   }
-
-  showRef(){
-    console.log(this.refs.something);
-  }
+ 
   remove(){
     let mobileMenu = document.querySelector('.mobile-menu');
-    if (mobileMenu.classList.contains('mobile-menu-show')){
+    if (mobileMenu && mobileMenu.classList.contains('mobile-menu-show')){
       mobileMenu.classList.remove('mobile-menu-show');
     }
   }
@@ -38,8 +34,8 @@ class App extends Component {
       <div className="App">
         <PageOne remove={this.remove} position={this.state.position} width={this.state.width}/>
         <PageTwo remove={this.remove} position={this.state.position}/>
-        <PageThree remove={this.remove} onClick={this.remove} position={this.state.position}/>
-        <PageFour  position={this.state.position} remove={this.remove}/>
+        <PageThree remove={this.remove} position={this.state.position}/>
+        <PageFour  remove={this.remove} position={this.state.position} />
       </div>
     );
   }

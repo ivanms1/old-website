@@ -6,7 +6,7 @@ import MobileNavbar from './mobile-navbar';
 export default function PageOne({position, width, remove}) {
 	return (
 		<div className='page-one-navbar'>
-		{width <= 800 ? <MobileNavbar position={position}/> : <Navbar position={position}/>}
+		{width <= 800 ? <MobileNavbar remove={remove} position={position}/> : <Navbar position={position}/>}
 		<div onClick={remove} className="page-one">
 			<img className="port-pic" src="../pics/pic2.jpg" alt=""/>
 				<h1 className="title">Ivan Saldano</h1>
