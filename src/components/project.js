@@ -16,7 +16,7 @@ export default class Project extends Component{
 
 	render(){
 		return(
-		<a href="" className={this.state.className}><img src="http://via.placeholder.com/350x200" alt=""/><p>Lorem ipsum dolor</p></a>
+		<a href="" className={this.state.className}><img src="../pics/placeholder.png" alt=""/><p>Lorem ipsum dolor</p></a>
 		)
 	}
 }
