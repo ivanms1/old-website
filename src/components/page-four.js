@@ -15,6 +15,7 @@ export default function PageFour({position, remove}) {
 		if(position > 1450) form.classList.add('page-4-show');
 		if(position > 1550) connect.classList.add('page-4-show');
 	}
+
 	return (
 		<div onClick={remove} className="page-four">
 			<h1 className="page-four-title">Contact</h1>
@@ -22,7 +23,7 @@ export default function PageFour({position, remove}) {
 				<Form/>
 				<div className="connect">
 					<p>For any further questions:</p>
-					<p>Email me at <a href="/">ivanms1@gmail.com</a></p>
+					<p>Email me at ivanms1@gmail.com</p>
 				</div>
 			</div>
 			<div className="footer">
