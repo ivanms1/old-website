@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://ivanms1.github.io",
   "dependencies": {
+    "firebase": "^5.0.2",
     "gh-pages": "^1.1.0",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",

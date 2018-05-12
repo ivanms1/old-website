@@ -16,7 +16,10 @@ export default class Project extends Component{
 
 	render(){
 		return(
-		<a href="" className={this.state.className}><img src="../pics/placeholder.png" alt=""/><p>Lorem ipsum dolor</p></a>
+		<a rel="noopener noreferrer" target="_blank" href={this.props.link} className={this.state.className}>
+			<img src={this.props.image} alt="project"/>
+			<p>{this.props.legend}</p>
+		</a>
 		)
 	}
 }
