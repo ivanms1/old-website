@@ -19,7 +19,9 @@ export default class Form extends Component {
 	    	name: name,
 	    	email: email,
 	    	message: message
-	    })
+	    });
+
+	    this.setState({name: '', email: '', message: ''})
   	}
 
   	handleChange(event) {
@@ -34,7 +36,7 @@ export default class Form extends Component {
 		return(
 			<form className="form" onSubmit={this.handleSubmit}>
 					<p>Please fill this form</p>
-					<input type="text" name='name' placeholder="Your name" value={this.state.value} onChange={this.handleChange}/>
+					<input type="text" name='name' placeholder="Your name" value={this.state.name} onChange={this.handleChange}/>
 					<input type="email" name='email' placeholder="Your email" value={this.state.email} onChange={this.handleChange}/>
 					<textarea rows='3' cols='5' name='message' placeholder="Your message" value={this.state.message} onChange={this.handleChange}></textarea>
 					<button type='submit' value='Submit'>Submit</button>

@@ -17,7 +17,7 @@ export default function ProjectList(props){
 				'https://codepen.io/ivanms1/full/jYNQGZ/',
 				'https://thawing-eyrie-14937.herokuapp.com/',
 				'http://www.celamarpichilemu.cl/',
-				'https://codepen.io/ivanms1/full/zdJerM/'
+				'https://ivanms1.github.io/wikipedia-viewer/'
 				]
 
 
