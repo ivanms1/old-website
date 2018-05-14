@@ -22,7 +22,7 @@ export default function PageThree({position, remove}) {
 			<div className="info">
 				<div className="bio">
 					<h1>Bio</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur inventore exercitationem reprehenderit saepe ut fugit accusamus impedit doloremque a veniam soluta tenetur facere, nesciunt quasi eveniet, atque harum totam repudiandae maiores assumenda illum ea! Consectetur amet, quam velit natus explicabo culpa id ipsum, distinctio accusantium, dolorem dolor possimus laborum voluptate!</p>
+					<p>My name is Ivan, born in Argentina but raised in Chile. I am highly motivated professional with a proven record of generating and building relationships and hard work. I am team player but I also have the ability to work independently. I am skilled and adaptable, able to overcome pressure and deliver quality work.</p>
 				</div>
 				<div className="skills">
 					<h1>Skills</h1>
