@@ -14,7 +14,7 @@ export default function ProjectList(props){
 					'../pics/wiki-viewer.png']
 	let links = ['https://spotify-backend-ivan.herokuapp.com/login',
 				'https://ivanms1.github.io/pomodoro-clock/',
-				'https://codepen.io/ivanms1/full/jYNQGZ/',
+				'https://codepen.io/ivanms1/full/yzwOez/',
 				'https://thawing-eyrie-14937.herokuapp.com/',
 				'http://www.celamarpichilemu.cl/',
 				'https://ivanms1.github.io/wikipedia-viewer/'
