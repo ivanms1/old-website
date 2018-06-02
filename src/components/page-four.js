@@ -22,8 +22,7 @@ export default function PageFour({position, remove}) {
 			<div className="contact-form">
 				<Form/>
 				<div className="connect">
-					<p>For any further questions:</p>
-					<p>Email me at ivanms1@gmail.com</p>
+					<p>Or send me and email<br/> contact@ivansaldano.com</p>
 				</div>
 			</div>
 			<div className="footer">

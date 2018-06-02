@@ -13,9 +13,15 @@ class App extends Component {
   }
 
   componentDidMount(){
-  window.addEventListener('scroll', () => {
+    if(window.innerHeight < 550){
+      window.addEventListener('scroll', () => {
+      this.setState({ position: window.scrollY + 220})
+    });
+    } else {
+      window.addEventListener('scroll', () => {
       this.setState({ position: window.scrollY })
     });
+    }
 
   window.addEventListener('resize', () => {
     this.setState({width: window.innerWidth})

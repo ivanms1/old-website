@@ -316,7 +316,7 @@
 }
 
 svg{
-  width: 100px;
+  width: calc(2.5vw + 75px);
 }
 
 .show{
@@ -335,15 +335,14 @@ svg{
 }
 
 .contact-form{
-    display: flex;
-    flex-direction: row;
-    align-items:flex-start;
+    display: grid;
+    grid-template-columns: 50vw 40vw;
     width: 95%;
     margin: 0% 2.5% 25px;
   }
 
 form {
-    width: 65%;
+    width: 71%;
     display: flex;
     flex-direction: column;
     margin: 0% 0% 2%;
@@ -362,20 +361,22 @@ form {
 
   input{
   font-size:calc(20px + .4vw);
-  width: 50%;
+  width: 35vw;
   margin: 1%;
   border: 1px solid #CCCCCC !important;
   }
 
   textarea{
-  font-size:calc(20px + .4vw);
-  width: 70%;
+  width: 35vw;
   margin: 1%;
+  font-size:calc(20px + .4vw);
   border: 1px solid #CCCCCC !important;
+  
+  resize: none;
   }
 
   form button{
-    font-size:calc(20px + .6vw);
+    font-size:calc(18px + .6vw);
     margin: 1%;
     width: 19%;
   }
@@ -423,6 +424,7 @@ form {
   }
 
   .contact-form{
+    display: flex;
     flex-direction: column;
     align-items: center;
   }
@@ -433,6 +435,14 @@ form {
   }
 
   form *{
+    width: 98%;
+  }
+
+  form div{
+    width: 100%;
+  }
+
+  textarea {
     width: 98%;
   }
 
